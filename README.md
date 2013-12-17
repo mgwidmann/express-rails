@@ -54,6 +54,11 @@ The log level can be changed by setting the `LEVEL` environment variable.
 
 Configuration is automatically required based on the currently set `NODE_ENV`. The exports in config/environments/<NODE_ENV>.js will be placed into the `app` variable at `app.config`. The file `config/environments/defaults.js` is intended to hold your default configuration. In each environemnt file, simply require that file and overwrite the values you want to change. This makes a cleaner configuration setup that doesn't require performing deep merges or clones of configuration that is the same for multiple environments.
 
+
+# Initializers
+
+All files in config/initializers will get required automatically. Also, they will get loaded at the very end of the boot process after all other objects are loaded. Use this to configure `npm` modules after the app is booted.
+
 # Controllers
 
 Controllers are located in the app/controllers directory and the file name is called <name>_controller.js or <name>Controller.js. The app (express) variable is passed in if you export a function. An example CRUD controller would be:
