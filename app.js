@@ -7,9 +7,9 @@ var app = express();
 app.set('port', process.env.PORT || 3000);
 app.set('env', process.env.NODE_ENV || 'development');
 
-app.logger = require('./config/initializers/logger')(app, process.env.LEVEL || 'info');
-
 app.config = require('./config/config')(app);
+
+app.logger = require('./config/initializers/logger')(app, process.env.LEVEL || 'info');
 
 require('./config/boot')(app);
 
