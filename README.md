@@ -5,6 +5,12 @@ A template express application which is organized like a typical Rails applicati
 
 The purpose of this project is to just provide a simple express template which has a included reloadable server, a configured testing framework which auto-watches all files, JSHint integration, environment based application configuration and the auto-require capability built into Rails.
 
+See also:
+
+* [skeleton](https://github.com/EtienneLem/skeleton)
+* [express-coffee](https://github.com/twilson63/express-coffee)
+* [frappe](https://github.com/dweldon/frappe)
+
 # Installation
 
     git clone git@github.com:mgwidmann/express-rails.git <YOUR_PROJECT_NAME>
