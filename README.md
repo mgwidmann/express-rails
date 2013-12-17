@@ -57,31 +57,33 @@ Configuration is automatically required based on the currently set `NODE_ENV`. T
 # Controllers
 
 Controllers are located in the app/controllers directory and the file name is called <name>_controller.js or <name>Controller.js. The app (express) variable is passed in if you export a function. An example CRUD controller would be:
-````module.exports = function(app){
-````  return {
-````     index: function(req, res){
-````       // Return all objects
-````     },
-````     show: function(req, res){
-````       // Return an object
-````     },
-````     edit: function(req, res){
-````       // Return the edit page for an object
-````     },
-````     new: function(req, res){
-````       // Return the new form for a new object
-````     },
-````     update: function(req, res){
-````       // Update a object
-````     },
-````     create: function(req, res){
-````       // Create an object
-````     },
-````     delete: function(req, res){
-````       // Delete an object
-````     }
-````  }
-````}
+````
+module.exports = function(app){
+  return {
+     index: function(req, res){
+       // Return all objects
+     },
+     show: function(req, res){
+       // Return an object
+     },
+     edit: function(req, res){
+       // Return the edit page for an object
+     },
+     new: function(req, res){
+       // Return the new form for a new object
+     },
+     update: function(req, res){
+       // Update a object
+     },
+     create: function(req, res){
+       // Create an object
+     },
+     delete: function(req, res){
+       // Delete an object
+     }
+  }
+}
+````
 
 # Models
 
